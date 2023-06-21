@@ -3,7 +3,7 @@ const path = require('path');
 
 const app = express();
 
-app.get('/', (req, res) =>
+app.get('/notes', (req, res) =>
     res.sendFile(path.join(__dirname, './public/index.html'))
 );
 
